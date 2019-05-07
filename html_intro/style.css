@@ -6,3 +6,22 @@ h1 {
 p {
     background-color: black;
 }
+
+p {
+    color: pink;
+    font-family: Helvetica;
+}
+
+#id_for_ul {
+  color: lightgreen;
+}
+
+#id_for_li {
+    color: lightsalmon;
+}
+.classeg1 {
+  color: purple;
+}
+.classeg2 {
+  background-color: rgb(241, 69, 164);
+}
