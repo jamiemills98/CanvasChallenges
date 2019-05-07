@@ -4,12 +4,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Understanding HTML and CSS">
   <title>This is my first HTML with CSS page!</title>
+  <!--Relative path to the CSS file-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--Style tag is used got embedded CSS in the HEAD tag of HTML-->
+  <style>
+      h1 {
+          color: purple;
+          font-size: 70px;
+         }
+  </style>
 </head>
 
 <body>
     <!--- Different options for inline colour--->
   <h1 style= "color: rgb(0, 0, 255); font-size: 50px;">Welcome to the world of CSS</h1>
-  <h1 style= "color: blue;">Welcome to the world of CSS</h1>
-  <h1 style= "color: #0000FF ;">Welcome to the world of CSS</h1>
+  <!-- <h1 style= "color: blue;">Welcome to the world of CSS</h1>
+  <h1 style= "color: #0000FF ;">Welcome to the world of CSS</h1> -->
+  <p>If we visualise our web page as a building then HTML would be the bricks and CSS would be the paint.</p>
 </body>
 </html>
