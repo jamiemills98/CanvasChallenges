@@ -1,3 +1,4 @@
+/* general element examples */
 h1 {
     color: red;
     font-size: 70px;
@@ -11,7 +12,7 @@ p {
     color: pink;
     font-family: Helvetica;
 }
-
+/* id examples */
 #id_for_ul {
   color: lightgreen;
 }
@@ -19,6 +20,7 @@ p {
 #id_for_li {
     color: lightsalmon;
 }
+/* class examples */
 .classeg1 {
   color: purple;
 }
@@ -29,7 +31,7 @@ p {
 h2 {
     color: yellowgreen !important;
 }
-
+/* !important from above overrides this */
 #colour {
     color: plum;
 }
