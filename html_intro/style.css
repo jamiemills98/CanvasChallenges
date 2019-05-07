@@ -25,3 +25,11 @@ p {
 .classeg2 {
   background-color: rgb(241, 69, 164);
 }
+/* !important tag */
+h2 {
+    color: yellowgreen !important;
+}
+
+#colour {
+    color: plum;
+}
