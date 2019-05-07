@@ -35,3 +35,8 @@ h2 {
 #colour {
     color: plum;
 }
+
+/* psuedo class example : hover */
+h3:hover {
+    color: blueviolet;
+}
