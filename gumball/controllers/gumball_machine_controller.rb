@@ -1,9 +1,5 @@
-class Gumball
-end
-
-
-
-
+require_relative "../models/gumball_machine"
+require_relative "../views/gumball_machine_view"
 
 class GumballMachineController
 
@@ -13,27 +9,26 @@ class GumballMachineController
   end
 
   def run
+    # Initial Greeting message
     @gumballMachineView.greeting
+    #Getting users choice
     choice = @gumballMachineView.menu 
-    
+    #Loop until exit (X)
     while choice != "X"
       if choice == "G"
         gumball = @gumballMachineModel.dispense
         if gumball.nil?
           @gumballMachineView.machineEmpty
         else
-          # fill in this line
+          @gumballMachineView.getgumball
         end
       end
       if choice == "R"
         numGumballs = @gumballMachineModel.refill(6)
-        @gumballMachineView.refill( ) # put something inside the brackets
+        @gumballMachineView.refill(numGumballs) # put something inside the brackets
       end
       choice = @gumballMachineView.menu
     end
-    # call the exit method
+    @gumballMachineView.exit
   end
 end
-
-gumballMachineController = GumballMachineController.new
-gumballMachineController.run

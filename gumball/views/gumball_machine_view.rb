@@ -1,7 +1,7 @@
 class GumballMachineView
 
     def greeting
-      # output a greeting message to the console
+      puts "Hello to the Gumball Machine"
     end
   
     def menu
@@ -11,7 +11,7 @@ class GumballMachineView
         choice = gets.chomp.upcase
       end
       
-      choice
+      return choice
     end
   
     def getGumball
@@ -19,16 +19,16 @@ class GumballMachineView
     end
   
     def machineEmpty
-      # output an appropriate message to the console
+      puts "Sorry we are all out of gumballs. Awaiting refill"
     end
   
     def refill(count)
-      # output an appropriate message to the console.
-      # Make sure you tell the user how many gumballs there are now!
+      puts "Thanks for refilling me!"
+      puts "The Gumball count is now #{count}"
     end
   
     def exit
-      # output an appropriate message to the console
+      puts "Thank you for coming. See you next time."
     end
   
   end

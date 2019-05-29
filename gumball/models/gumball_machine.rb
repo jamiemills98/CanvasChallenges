@@ -1,7 +1,8 @@
+
 class GumballMachineModel
 
     def initialize(gumballCount: 0)
-      # fill in this line
+      @gumballCount = gumballCount
     end
     
     def dispense
@@ -15,6 +16,7 @@ class GumballMachineModel
   
     def refill(count)
       @gumballCount += count
+      return @gumballCount
     end
   
   end
