@@ -26,7 +26,17 @@ class GumballMachineView
       puts "Thanks for refilling me!"
       puts "The Gumball count is now #{count}"
     end
+
+    def invalidRefill(count)
+        puts "Hey, where are my gumballs?"
+        puts "#{count} is not right!"
+    end
   
+    def refillCount
+      puts "How many Gumballs are you adding?"
+      return gets.to_i
+    end
+
     def exit
       puts "Thank you for coming. See you next time."
     end

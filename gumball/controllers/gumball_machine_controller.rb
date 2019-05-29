@@ -20,12 +20,14 @@ class GumballMachineController
         if gumball.nil?
           @gumballMachineView.machineEmpty
         else
-          @gumballMachineView.getgumball
+          @gumballMachineView.getGumball
         end
       end
       if choice == "R"
-        numGumballs = @gumballMachineModel.refill(6)
-        @gumballMachineView.refill(numGumballs) # put something inside the brackets
+        current_count = @gumballMachineModel.refill(0) 
+        refill_count = @gumballMachineView.refillCount
+        numGumballs = @gumballMachineModel.refill(refill_count)
+        @gumballMachineView.refill(numGumballs)
       end
       choice = @gumballMachineView.menu
     end

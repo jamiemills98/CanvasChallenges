@@ -15,7 +15,7 @@ class GumballMachineModel
     end
   
     def refill(count)
-      @gumballCount += count
+      @gumballCount += count if count > 0
       return @gumballCount
     end
   
