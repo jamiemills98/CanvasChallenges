@@ -38,4 +38,3 @@ class GumballMachineController
   end
 end
 
-#testing repo
