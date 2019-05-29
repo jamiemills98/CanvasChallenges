@@ -24,10 +24,13 @@ class GumballMachineController
         end
       end
       if choice == "R"
-        current_count = @gumballMachineModel.refill(0) 
-        refill_count = @gumballMachineView.refillCount
-        numGumballs = @gumballMachineModel.refill(refill_count)
-        @gumballMachineView.refill(numGumballs)
+        refill_count = @gumballMachineView.refillCount #calling refill count to get how many they are refilling
+        if refill_count > 0 
+          numGumballs = @gumballMachineModel.refill(refill_count) #refilling gbm model with entered refill count
+          @gumballMachineView.refill(numGumballs) #returns how many gumballs there are now 
+        else
+          @gumballMachineView.invalidRefill(refill_count) #returned if less than 0 to say it's not valid
+        end
       end
       choice = @gumballMachineView.menu
     end
